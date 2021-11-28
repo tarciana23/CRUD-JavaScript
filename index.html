@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Desafio Final
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1 id ="titulo_pagina"><center>Cursos sobre Educação Financeira</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Curso*</label><label class="validation-error hide" id="cursoValidationError">Este campo é obrigatório</label>
+                        <input type="text" name="curso" id="curso">
+                    </div>
+                    <div>
+                        <label>Numero Id</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                    <div>
+                        <label>Descrição</label>
+                        <input type="text" name="descricao" id="descricao">
+                    </div>
+                    <div>
+                        <label>Nome do professor</label>
+                        <input type="text" name="nome_professor" id="nome_professor">
+                    </div>
+                    <div>
+                        <label>Link das aulas</label>
+                        <input type="text" name="link_aulas" id="link_aulas">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Número ID</th>
+                            <th>Descrição</th>
+                            <th>Nome do professor</th>
+                            <th>Link das aulas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
